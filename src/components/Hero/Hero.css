@@ -1,0 +1,173 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+#hero {
+  padding-top: 5.2rem;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#heroBgVid {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  z-index: 1;
+  position: absolute;
+  padding-top: 20vh;
+  width: 100%;
+  height: 100%;
+  top: 50vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.overlay-bg {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: clamp(24rem, 20.7273rem + 14.5455vw, 30rem);
+}
+/* .hero__header {
+  position: absolute;
+  width: 100%;
+  top:42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__body {
+  position: absolute;
+  width: 100%;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__footer {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.hero__header h1 {
+  font-size: clamp(2.5rem, 1.1364rem + 6.0606vw, 5rem);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.hero__header h2 {
+  font-size: clamp(1.6rem, 0.8364rem + 3.3939vw, 3rem);
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+
+  text-transform: uppercase;
+  line-height: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+.hero__header span {
+  font-size: clamp(1.6rem, 0.8364rem + 3.3939vw, 3rem);
+  letter-spacing: 0.1rem;
+
+  text-transform: capitalize;
+  font-family: "Bebas Neue", cursive;
+}
+
+.hero__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__body img {
+  width: clamp(14rem, 12.9091rem + 4.8485vw, 16rem);
+  aspect-ratio: 6/2;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.hero__body span {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  padding: 1.2rem 0;
+  position: relative;
+}
+
+.hero__body span::before,
+.hero__body span::after {
+  content: "";
+  height: 2px;
+  width: 5rem;
+  background: #ffffff;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.hero__body span::before {
+  left: 50%;
+  top: 0.5rem;
+}
+.hero__body span::after {
+  left: 50%;
+  bottom: 0.5rem;
+}
+
+.hero__footer {
+  margin-top: 2rem;
+  font-size: clamp(1rem, 0.7818rem + 0.9697vw, 1.4rem);
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.hero__footer div {
+  margin-bottom: 0.6rem;
+}
+
+@media (width>=760px) {
+  .hero__body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 4rem;
+  }
+
+  .hero__footer {
+    margin-top: 4rem;
+  }
+}
+
+@media (width>=1020px) {
+  .overlay {
+    padding-top: 16rem;
+  }
+}

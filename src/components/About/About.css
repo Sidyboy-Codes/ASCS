@@ -1,0 +1,131 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+#about {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
+  min-height: 400vh;
+}
+
+.about__sticky {
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.about__title {
+  position: relative;
+  width: 100%;
+  padding-left: 4rem;
+}
+
+.about__title h1 {
+  font-size: clamp(2.4rem, 1.9663rem + 1.9277vw, 3.2rem);
+  text-transform: uppercase;
+}
+
+.about__title h1 span {
+  color: #e14424;
+}
+
+.about__sticky img {
+  z-index: -1;
+  position: absolute;
+  max-width: 120rem;
+}
+
+.about__info {
+  z-index: 9;
+  width: 100%;
+  margin-top: 100vh;
+  padding-bottom: 15%;
+  padding-right: 5rem;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  height: auto;
+  min-height: 100vh;
+}
+
+.about__info__block {
+  float: right;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.about__info__block h1 {
+  font-size: 1.8rem;
+}
+
+.about__info__block p,
+.about__info__block li {
+  font-size: 1.2rem;
+}
+
+
+
+@media (width<=760px) {
+  .about__info__block {
+    width: 100%;
+  }
+
+  .about__info__block {
+    padding: 0 2rem;
+  }
+
+  .about__info {
+    max-width: 70vh;
+  }
+}
+
+@media (width>=1020px) {
+  .about__title {
+    padding-left: 8rem;
+  }
+
+  .about__info__block{
+    width: 42%;
+  }
+}

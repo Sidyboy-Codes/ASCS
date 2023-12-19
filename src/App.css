@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("../node_modules/react-modal-video/css/modal-video.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.2rem;
+}
+html {
+  height: -webkit-fill-available;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+  height: -webkit-fill-available;
+}
+
+h1,
+h2 {
+  font-family: "Bebas Neue", cursive;
+}
+
+button {
+  all: unset;
+}
+
+.navbar .ticket-btn {
+  color: white;
+  background-color: #e14424;
+  padding: 0.4rem 0.6rem;
+  border-radius: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1rem;
+  gap: 0.4rem;
+}
+
+.navbar .ticket-btn:hover {
+  background-color: #ff4d2a;
+}
+.hero__footer .ticket-btn {
+  position: relative;
+  color: black;
+  background-color: white;
+  padding: 0.6rem 0.8rem;
+  border-radius: 10rem;
+  display: flex;
+  gap: 0.4rem;
+  width: fit-content;
+  margin: auto;
+}

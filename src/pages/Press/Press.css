@@ -1,0 +1,33 @@
+.press {
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.press h1 {
+  font-size: 2rem;
+}
+
+.press_contain {
+  /* padding: 2rem 16rem; */
+  padding: 2rem clamp(2rem, -4.4rem + 32vw, 16rem);;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.press_contain p {
+  margin: 1.2rem 0;
+}
+
+.press_contain a {
+  text-decoration: underline;
+  color: #e14424;
+}
+
+.press_contain .download_btn {
+  color: white;
+  background-color: #e14424;
+  padding: 0.4rem 0.6rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+}

@@ -1,0 +1,152 @@
+#introduction {
+  background-color: #272727;
+  padding: 2rem 0;
+}
+
+.intro__video {
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  width: 80%;
+  margin: auto;
+}
+
+.intro__video__sec {
+  position: relative;
+  aspect-ratio: 16/9;
+  border-radius: 0 0 25px 25px;
+  cursor: pointer;
+}
+
+/* **************************************************** */
+/* **************************************************** */
+/* **************************************************** */
+.intro__guest {
+  padding: 6rem 6rem;
+}
+
+
+.card {
+  /* border: 1px solid #ccc; */
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slide {
+  margin: 0 auto;
+  height: 26rem !important;
+  max-width: 20rem;
+}
+
+.card-header {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.08rem;
+}
+
+.guest-name {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.guest-description {
+  font-size: 16px;
+  margin: 0;
+}
+
+.card-footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+.read-more {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.glider-dots .active {
+  background: #e14424;
+}
+
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+
+
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+.react-responsive-modal-modal{
+  margin-top: 10rem ;
+  max-width: 60rem;
+}
+.modal {
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.modal-header {
+  /* background-color: #f0f0f0; */
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.modal-header img {
+  border-radius: 12px;
+  width: 60%;
+  max-width: 26rem;
+  min-width: 16rem;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 1.3636rem + 1.9394vw, 2.6rem);
+}
+
+.modal-body {
+  padding: 20px;
+  font-size: clamp(0.8rem, 0.5818rem + 0.9697vw, 1.2rem);
+}
+.modal-body p{
+  margin-bottom: 1rem;
+}
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+@media (width>=760px) {
+  .intro__video {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .intro__video img {
+    width: 50%;
+  }
+
+  .intro__video__sec {
+    width: 50%;
+    border-radius: 0 25px 25px 0;
+  }
+}
